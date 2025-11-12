@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -100,10 +101,12 @@ export default function MonthsaryInvite() {
 
       <div className="max-w-3xl w-full bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden animate-fade-in">
         <div className="relative h-56 sm:h-64 md:h-80 overflow-hidden group">
-          <img
+          <Image
             alt="Us together"
             src="/couple-photo.jpg"
-            className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end">
             <div className="p-5 sm:p-8 md:p-10 text-white w-full">
@@ -147,7 +150,7 @@ export default function MonthsaryInvite() {
                     variant={rsvp === "yes" ? "default" : "outline"}
                     className={`transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 active:scale-95 w-full sm:w-auto h-12 sm:h-10 text-base sm:text-sm ${rsvp === "yes" ? "bg-pink-500 hover:bg-pink-600" : ""}`}
                   >
-                    Yes, I'll be there hehe
+                    Yes, I&apos;ll be there hehe
                   </Button>
 
                   <Button
@@ -155,7 +158,7 @@ export default function MonthsaryInvite() {
                     variant={rsvp === "no" ? "secondary" : "outline"}
                     className="transition-all duration-200 hover:scale-105 hover:-translate-y-0.5 active:scale-95 w-full sm:w-auto h-12 sm:h-10 text-base sm:text-sm"
                   >
-                    I can't make it di na kasi kita lab
+                    I can&apos;t make it di na kasi kita lab
                   </Button>
                 </div>
 
