@@ -83,22 +83,6 @@ export default function MonthsaryInvite() {
         </div>
       )}
 
-      <style jsx>{`
-        @keyframes confetti {
-          0% {
-            transform: translateY(0) rotateZ(0deg);
-            opacity: 1;
-          }
-          100% {
-            transform: translateY(100vh) rotateZ(720deg);
-            opacity: 0;
-          }
-        }
-        .animate-confetti {
-          animation: confetti forwards;
-        }
-      `}</style>
-
       <div className="max-w-3xl w-full bg-white rounded-xl sm:rounded-2xl shadow-lg overflow-hidden animate-fade-in">
         <div className="relative h-56 sm:h-64 md:h-80 overflow-hidden group">
           <Image
